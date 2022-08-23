@@ -1,1 +1,3 @@
-# Pseudo-character-platform-driver-with-multiple-nodes-and-sysfs-attributes
+# PCD driver with sysfs support
+
+pseudo-devices are files, usually located in /dev, they're like a device file, but instead of acting as a bridge between the operating system and hardware, it's a device driver without an actual device. they usually serve a practical purpose, such as producing random data, or acting as a virtual sinkhole for unwanted data. examples would be files like /dev/random or /dev/null.  The way a device file is associated with its driver is via a unique number called a major number. In addition to its major number, every device is assigned a minor number too.  The best way to imagine this is by thinking of your disk. if you're running your system with a single disk, most likely its device file is going to be /dev/sda. the name tells us that it's using the sd "storage driver", and that its minor number is 0. The same applies to other device types, such as tty.
