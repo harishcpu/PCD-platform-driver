@@ -1,0 +1,1 @@
+# Pseudo-character-platform-driver-with-multiple-nodes-and-sysfs-attributes
