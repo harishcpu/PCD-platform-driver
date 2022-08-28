@@ -32,6 +32,7 @@ struct pcdev_private_data {
     char *buffer;
     dev_t device_number;
     struct cdev pcd_cdev;
+    struct mutex pcd_lock;
 };
 
 /* Private data of the driver */
